@@ -10,6 +10,13 @@ export const metadata: Metadata = createPageMetadata({
         'Launch a fully optimized Next.js site with Bloggen Auth Starter Supabase, then create high-quality, SEO-friendly content effortlessly using Bloggen AI.'
 });
 
+const aboutSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  'name': 'About',
+  'description': 'Learn about Bloggen Auth Starter Supabase and its features.'
+};
+
 export default function FeaturePage() {
     return (
         <main role='main' className='min-h-screen'>
@@ -17,9 +24,7 @@ export default function FeaturePage() {
                 type='application/ld+json'
                 suppressHydrationWarning
                 dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        /* your existing structured data */
-                    })
+                    __html: JSON.stringify(aboutSchema)
                 }}
             />
             <div className='mx-auto max-w-[90%] py-10 sm:py-16 xl:max-w-[1280px]'>

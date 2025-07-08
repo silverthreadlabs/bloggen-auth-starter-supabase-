@@ -1,5 +1,3 @@
-
-
 import { notFound } from 'next/navigation';
 
 import { BlogPosts } from '@/components/blog/blog-post';

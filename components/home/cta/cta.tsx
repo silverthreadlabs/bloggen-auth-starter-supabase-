@@ -44,31 +44,7 @@ export default function Cta() {
                                     <span className='relative z-10'>Create Your First Post</span>
                                     <div className='absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-500 group-hover:translate-x-full'></div>
                                 </Button>
-                            </Link>
-
-                            <Link href='/contact'>
-                                <Button
-                                    color='primary'
-                                    variant='ghost'
-                                    size='lg'
-                                    className='group'
-                                    trailingIcon={
-                                        <svg
-                                            className='h-5 w-5 transition-transform group-hover:translate-x-1'
-                                            fill='none'
-                                            stroke='currentColor'
-                                            viewBox='0 0 24 24'>
-                                            <path
-                                                strokeLinecap='round'
-                                                strokeLinejoin='round'
-                                                strokeWidth={2}
-                                                d='M17 8l4 4m0 0l-4 4m4-4H3'
-                                            />
-                                        </svg>
-                                    }>
-                                    Schedule Demo
-                                </Button>
-                            </Link>
+                            </Link>  
                         </div>
                     </div>
                 </div>

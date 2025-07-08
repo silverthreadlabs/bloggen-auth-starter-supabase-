@@ -89,6 +89,7 @@ const PlayGroundCard: React.FC<PlayGroundCardProps> = ({ className = '' }) => {
                                 color='neutral'
                                 size='lg'
                                 iconOnly
+                                aria-label='Select minimal theme'
                                 className={`relative transform overflow-hidden !rounded-full !p-0 !shadow-none transition-all duration-500 hover:scale-110 ${
                                     currentTheme === 'minimal' ? 'ring-4 ring-blue-400' : ''
                                 }`}
@@ -115,6 +116,7 @@ const PlayGroundCard: React.FC<PlayGroundCardProps> = ({ className = '' }) => {
                                 color='neutral'
                                 size='lg'
                                 iconOnly
+                                aria-label='Select modern theme'
                                 className={`relative transform overflow-hidden !rounded-full !p-0 !shadow-none transition-all duration-500 hover:scale-110 ${
                                     currentTheme === 'modern' ? 'ring-4 ring-blue-400' : ''
                                 }`}
@@ -141,6 +143,7 @@ const PlayGroundCard: React.FC<PlayGroundCardProps> = ({ className = '' }) => {
                                 color='neutral'
                                 size='lg'
                                 iconOnly
+                                aria-label='Select subtle theme'
                                 className={`relative transform overflow-hidden !rounded-full !p-0 !shadow-none transition-all duration-500 hover:scale-110 ${
                                     currentTheme === 'subtle' ? 'ring-4 ring-blue-400' : ''
                                 }`}
@@ -181,6 +184,7 @@ const PlayGroundCard: React.FC<PlayGroundCardProps> = ({ className = '' }) => {
                                 color='neutral'
                                 size='sm'
                                 iconOnly
+                                aria-label='Add to favorites'
                                 className='rounded-full transition-all duration-300'
                                 leadingIcon={<Heart className='h-3 w-3' fill='none' stroke='currentColor' />}
                             />

@@ -370,17 +370,6 @@
 }
 
 /*Remove padding and max-width from product slug page so the content is flush with the top nav*/
-.product-page {
-    #nd-page {
-        padding: 0;
-    }
-
-    #nd-page article {
-        max-width: none;
-        padding: 0;
-    }
-}
-.product-page #nd-docs-layout,
 .blog-page #nd-docs-layout {
   margin-inline-start: 0 !important;
 }

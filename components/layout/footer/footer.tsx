@@ -18,8 +18,9 @@ const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent(SUBJECT)}&body=${en
 const NAV_ITEMS = [
     { href: '/about', label: 'About' },
     { href: '/blog', label: 'Blog' },
-    { href: '/contact', label: 'Contact' },
-    { href: '/terms', label: 'Terms' }
+    { href: '/terms', label: 'Terms' },
+    { href: '/policy', label: 'Policy' },
+    { href: '/faq', label: 'FAQ' }
 ];
 
 const title = 'Silverthread Labs';
@@ -58,7 +59,7 @@ export default function Footer() {
                         <p className='text-canvas-text text-sm'>
                             © {currentYear} Bloggen. Crafted by{' '}
                             <Link href='https://silverthreadlabs.com' target='_blank' rel='noopener noreferrer'>
-                                <button className='group relative cursor-pointer'>
+                                <button className='group relative cursor-pointer' aria-label='Visit Silverthread Labs website'>
                                     <div className='ml-1 flex w-fit items-center justify-start space-x-3'>
                                         <span className='text-canvas-text-contrast group-hover:text-canvas-text-contrast/90 text-sm transition-colors duration-300'>
                                             {title}
