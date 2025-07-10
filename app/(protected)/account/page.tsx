@@ -1,5 +1,4 @@
 
-import CustomerPortalForm from '@/components/authui/AccountForms/CustomerPortalForm';
 import EmailForm from '@/components/authui/AccountForms/EmailForm';
 import NameForm from '@/components/authui/AccountForms/NameForm';
 import SignOutButton from '@/components/authui/AccountForms/SignOutButton';
