@@ -53,7 +53,7 @@ export default function Hero() {
                                 <div className='flex flex-col gap-4 sm:flex-row'>
                                     <Link
                                         target='_blank'
-                                        href='https://github.com/silverthreadlabs/bloggen-seo-starter'
+                                        href='https://github.com/silverthreadlabs/bloggen-auth-starter-supabase-'
                                         className='flex-1'>
                                         <Button
                                             color='primary'

@@ -45,16 +45,16 @@ export default function Navlinks({ user }: NavlinksProps) {
                   </Link>
                 </li>
               ))}
-              {user ? (
-                <li key="signout">
-                  <form onSubmit={(e) => handleRequest(e, SignOut, router)}>
-                    <input type="hidden" name="pathName" value={usePathname()} />
-                    <Button type="submit" variant="solid" color="primary">
-                      Sign out
+              {user && (
+                <li key="account">
+                  <Link href="/account">
+                    <Button variant="solid" color="primary">
+                      Account
                     </Button>
-                  </form>
+                  </Link>
                 </li>
-              ) : (
+              )}
+              {!user && (
                 <li key="signin">
                   <Link href="/signin">
                     <Button variant="solid" color="primary">
@@ -108,16 +108,18 @@ export default function Navlinks({ user }: NavlinksProps) {
                 </Link>
               </li>
             ))}
-            <li>
-              <div className='flex flex-col gap-3'>
-                {user ? (
-                  <form onSubmit={(e) => handleRequest(e, SignOut, router)}>
-                    <input type="hidden" name="pathName" value={usePathname()} />
-                    <Button type="submit" variant="solid" color="primary" className="w-full">
-                      Sign out
-                    </Button>
-                  </form>
-                ) : (
+            {user && (
+              <li>
+                <Link href="/account" onClick={toggleMobile}>
+                  <Button variant="solid" color="primary" className="w-full">
+                    Account
+                  </Button>
+                </Link>
+              </li>
+            )}
+            {!user && (
+              <li>
+                <div className='flex flex-col gap-3'>
                   <Link
                     href="/signin"
                     onClick={toggleMobile}
@@ -126,9 +128,9 @@ export default function Navlinks({ user }: NavlinksProps) {
                       Sign In
                     </Button>
                   </Link>
-                )}
-              </div>
-            </li>
+                </div>
+              </li>
+            )}
           </ul>
         </nav>
       )}
